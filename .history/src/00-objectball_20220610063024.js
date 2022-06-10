@@ -119,13 +119,6 @@ function gameObject(){
     }
 
 }
-function players(){
-    const game = gameObject()
-    const homePlayers = game.home.players
-    const awayPlayers = game.away.players
-
-    return Object.assign({}, homePlayers,awayPlayers)
-}
 
 
 function goodPractices(playerInput){
@@ -133,4 +126,4 @@ function goodPractices(playerInput){
     const player = playerArrays.find(playerArray => playerArray[0]=== playerInput)
     return player[0].points
 }
-debugger;
+debb

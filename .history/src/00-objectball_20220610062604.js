@@ -101,14 +101,14 @@ function gameObject(){
                             slamDunk:0
                         },
                         'Brendan Haywood':{
-                            number:33,
+                            number:31,
                             shoe:15,
-                            points:6,
-                            rebounds:12,
-                            assists:12,
-                            steals:22,
-                            blocks:5,
-                            slamDunk:12
+                            points:19,
+                            rebounds:2,
+                            assists:2,
+                            steals:4,
+                            blocks:11,
+                            slamDunk:1
                         }
 
                     }
@@ -117,20 +117,5 @@ function gameObject(){
             
         }
     }
-
-}
-function players(){
-    const game = gameObject()
-    const homePlayers = game.home.players
-    const awayPlayers = game.away.players
-
-    return Object.assign({}, homePlayers,awayPlayers)
 }
 
-
-function goodPractices(playerInput){
-    const playerArrays = object.entries(players());
-    const player = playerArrays.find(playerArray => playerArray[0]=== playerInput)
-    return player[0].points
-}
-debugger;

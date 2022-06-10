@@ -108,7 +108,7 @@ function gameObject(){
                             assists:12,
                             steals:22,
                             blocks:5,
-                            slamDunk:12
+                            slamDunk:1
                         }
 
                     }
@@ -117,20 +117,5 @@ function gameObject(){
             
         }
     }
-
-}
-function players(){
-    const game = gameObject()
-    const homePlayers = game.home.players
-    const awayPlayers = game.away.players
-
-    return Object.assign({}, homePlayers,awayPlayers)
 }
 
-
-function goodPractices(playerInput){
-    const playerArrays = object.entries(players());
-    const player = playerArrays.find(playerArray => playerArray[0]=== playerInput)
-    return player[0].points
-}
-debugger;

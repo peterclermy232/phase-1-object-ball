@@ -122,9 +122,7 @@ function gameObject(){
 function players(){
     const game = gameObject()
     const homePlayers = game.home.players
-    const awayPlayers = game.away.players
-
-    return Object.assign({}, homePlayers,awayPlayers)
+    const homePlayers = game.away.players
 }
 
 
